@@ -3,7 +3,7 @@ import pytest
 from playwright.sync_api import Page, expect
 
 
-BASE_URL = os.getenv("E2E_BASE_URL", "http://127.0.0.1:8000")
+BASE_URL = os.getenv("E2E_BASE_URL", "http://127.0.0.1:8000") # Cambia esto si tu backend corre en otra URL o puerto
 
 
 @pytest.fixture
@@ -38,7 +38,7 @@ def test_lista_conversaciones_persisted(page: Page, conversation_id: int):
 
 
 def test_cambiar_entre_conversaciones(page: Page):
-    page.goto(BASE_URL)
+    page.goto(BASE_URL) 
     page.click("#new-conv-btn")
     page.wait_for_timeout(200)
     page.click("#new-conv-btn")

@@ -1,4 +1,4 @@
-# Guía del Proyecto: Chat con LLM
+# Guía del Proyecto: Chat con LLM #
 
 Esta guía explica todo lo que construimos clase a clase — qué es cada tecnología, por qué la usamos y cómo encaja con el resto.
 
